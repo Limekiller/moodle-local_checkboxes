@@ -3,6 +3,10 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
+.automatic-completion-conditions {
+    display: flex;
+    margin-top: 15px;
+}
 
 .automatic-completion-conditions .badge,
 button[data-action="toggle-manual-completion"]{
@@ -38,7 +42,27 @@ button[data-toggletype="manual:undo"]:after {
     height: 25px;    
     background-color: white;     
     border: 2px dashed #ced4da;
+    display: flex;
+    justify-content: center;
 }
+.automatic-completion-conditions .badge-secondary.badge span {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.automatic-completion-conditions .badge-secondary.badge span {
+    font-size: 15px;
+    position: absolute;
+    bottom: -40px;
+    padding: 5px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+.automatic-completion-conditions .badge-secondary.badge:hover span {
+    opacity: 1;
+}
+
 .automatic-completion-conditions .badge-success.badge {
     width: 25px;
     height: 25px;
