@@ -6,14 +6,8 @@
 
 .automatic-completion-conditions .badge,
 button[data-action="toggle-manual-completion"]{
-    top: 0px;
-    right: 0px;
     position: relative;
     margin-right: 20px;
-}
-.editing .automatic-completion-conditions .badge,
-.editing button[data-action="toggle-manual-completion"]{
-    right: 90px;
 }
 
 /* Turn manual completion into checkboxes */
