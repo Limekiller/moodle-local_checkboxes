@@ -50,6 +50,14 @@ button[data-toggletype="manual:undo"]:after {
     pointer-events: none;
     transition: opacity 0.4s ease;
 }
+.automatic-completion-conditions .badge-secondary.badge span::after {
+    content: '▲';
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+}
 .automatic-completion-conditions .badge-secondary.badge span {
     font-size: 15px;
     position: absolute;
