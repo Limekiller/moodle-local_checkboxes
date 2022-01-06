@@ -1,0 +1,62 @@
+.activity-information {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.automatic-completion-conditions .badge,
+button[data-action="toggle-manual-completion"]{
+    top: 0px;
+    right: 0px;
+    position: relative;
+    margin-right: 20px;
+}
+.editing .automatic-completion-conditions .badge,
+.editing button[data-action="toggle-manual-completion"]{
+    right: 90px;
+}
+
+/* Turn manual completion into checkboxes */
+button[data-action="toggle-manual-completion"] {
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+    margin-top: 15px;
+    border-radius: .25rem;
+    font-size: 0px;
+    border: 2px solid rgb(106, 115, 123); 
+}
+button[data-toggletype="manual:undo"] {
+    border: 2px solid green;
+}
+button[data-toggletype="manual:undo"]:after {
+    content: '✓';
+    font-size: 41px;
+    position: absolute;
+    left: 0;
+    top: -23px;
+}
+
+/* Turn automatic completion into checkboxes */
+.automatic-completion-conditions .badge-secondary.badge {     
+    font-size: 0px;     
+    width: 25px;     
+    height: 25px;    
+    background-color: white;     
+    border: 2px dashed #ced4da;
+}
+.automatic-completion-conditions .badge-success.badge {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 2px solid green;
+    font-size: 0px;
+}
+.automatic-completion-conditions .badge-success::after {
+    content: '✓';
+    font-size: 40px;
+    color: green;
+    position: absolute;
+    top: -14px;
+    left: 0;
+}
