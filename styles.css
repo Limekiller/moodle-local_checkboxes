@@ -1,3 +1,9 @@
+.activity > div > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    flex-wrap: wrap;
+}
 .activity-information {
     display: flex;
     flex-direction: row-reverse;
@@ -5,7 +11,13 @@
 }
 .automatic-completion-conditions {
     display: flex;
-    margin-top: 15px;
+}
+div[data-region="activity-dates"] {
+    margin-top: -6px;
+    width: 60vw;
+}
+.activityinstance {
+    margin-bottom: 13px;
 }
 
 .automatic-completion-conditions .badge,
@@ -19,7 +31,6 @@ button[data-action="toggle-manual-completion"] {
     width: 25px;
     height: 25px;
     padding: 0px;
-    margin-top: 15px;
     border-radius: .25rem;
     font-size: 0px;
     border: 2px solid rgb(106, 115, 123); 
