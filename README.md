@@ -4,4 +4,4 @@
 
 This plugin restores activity completion style to the pre-3.11 checkboxes.
 
-To install, clone this repo to your/moodle/installation/local/checkboxes
+To install, clone this repo to your/moodle/installation/local/checkboxes or install from https://moodle.org/plugins/local_checkboxes
