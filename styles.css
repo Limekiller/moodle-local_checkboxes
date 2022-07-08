@@ -47,7 +47,8 @@ button[data-toggletype="manual:undo"]:after {
 }
 
 /* Turn automatic completion into checkboxes */
-.automatic-completion-conditions .badge-secondary.badge {     
+.automatic-completion-conditions .badge-secondary.badge,
+.automatic-completion-conditions .badge-success.badge {     
     font-size: 0px;     
     width: 25px;     
     height: 25px;    
@@ -56,12 +57,14 @@ button[data-toggletype="manual:undo"]:after {
     display: flex;
     justify-content: center;
 }
-.automatic-completion-conditions .badge-secondary.badge span {
+.automatic-completion-conditions .badge-secondary.badge span,
+.automatic-completion-conditions .badge-success.badge span {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease;
 }
-.automatic-completion-conditions .badge-secondary.badge span::after {
+.automatic-completion-conditions .badge-secondary.badge span::after,
+.automatic-completion-conditions .badge-success.badge span::after {
     content: '▲';
     color: black;
     position: absolute;
@@ -69,7 +72,8 @@ button[data-toggletype="manual:undo"]:after {
     top: -12px;
     transform: translateX(-50%);
 }
-.automatic-completion-conditions .badge-secondary.badge span {
+.automatic-completion-conditions .badge-secondary.badge span, 
+.automatic-completion-conditions .badge-success.badge span {
     font-size: 15px;
     position: absolute;
     bottom: -40px;
@@ -78,7 +82,8 @@ button[data-toggletype="manual:undo"]:after {
     color: white;
     border-radius: 5px;
 }
-.automatic-completion-conditions .badge-secondary.badge:hover span {
+.automatic-completion-conditions .badge-secondary.badge:hover span,
+.automatic-completion-conditions .badge-success.badge:hover span {
     opacity: 1;
 }
 

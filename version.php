@@ -23,7 +23,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_checkboxes';
-$plugin->version = 2022011401;
+$plugin->version = 2022070801;
 $plugin->requires = 2021051700;
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = 'v1.2';
+$plugin->release = 'v1.3';
